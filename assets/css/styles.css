@@ -1,0 +1,90 @@
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+  position: relative;
+  background-image: url('https://api.vrt.app/bing/');
+  opacity: 1.5;
+  background-size: cover;
+  background-position: center center;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 8px 12px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  /* 添加动画属性 */
+  animation: fade-in 1s ease-in-out;
+}
+
+button:hover {
+  background-color: #3E8E41;
+}
+
+.upload-button {
+  padding: 10px 12px;
+}
+
+input[type=file] {
+  display: none;
+}
+
+.file-select-button {
+  padding: 10px 12px;
+  margin-right: 100px;
+  /* 添加动画属性 */
+  animation: fade-in 1s ease-in-out;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  max-width: 80%;
+  text-align: center;
+  line-height: 1.5;
+}
+
+#image-url,
+#image-origin-url {
+  font-weight: bold;
+  word-break: break-all;
+  cursor: pointer;
+  user-select: all;
+}
+
+body:before {
+  content: "";
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  opacity: 0.5;
+}
+
+/* 定义一个名为fade-in的动画 */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

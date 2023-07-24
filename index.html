@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ArousPic</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/Xramas/ArousPic@master/assets/css/styles.css">
+</head>
+<body>
+  <h1>PicService</h1>
+
+  <form id="upload-form" enctype="multipart/form-data">
+    <input type="file" name="image" accept=".jpg,.jpeg,.png,.gif">
+    <button type="button" id="file-select-button">选择图片</button>
+    <button type="submit" id="upload-button">上传图片</button>
+  </form>
+  
+  <p>原始URL：<span id="image-origin-url"></span>
+    <button class="copy-button" data-clipboard-target="#image-origin-url">复制</button>
+  </p>
+  <p>代理URL：<span id="image-proxied-url"></span>
+    <button class="copy-button" data-clipboard-target="#image-proxied-url">复制</button>
+  </p>
+  <p>加速URL：<span id="image-speed-url"></span>
+    <button class="copy-button" data-clipboard-target="#image-speed-url">复制</button>
+  </p>
+
+  <script src="https://fastly.jsdelivr.net/gh/Xramas/ArousPic@master/assets/js/jquery-3.6.0.min.js"></script>
+  <script src="https://fastly.jsdelivr.net/gh/Xramas/ArousPic@master/assets/js/clipboard.min.js"></script>
+  <script src="https://fastly.jsdelivr.net/gh/Xramas/ArousPic@master/assets/js/script.js"></script>
+</body>
+</html>
